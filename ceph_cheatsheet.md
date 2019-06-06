@@ -634,7 +634,7 @@
   # virsh net-start vagrant-libvirt
   ~~~
 
-# Ceph Luminous - Cheatsheet (not quite)
+# Ceph Luminous - Cheatsheet
 
 ## Monitoring and Health
 
@@ -698,7 +698,7 @@
 - Command: **`ceph quorum_status {--format json-pretty}`**
 
   ~~~
-  # eph quorum_status
+  # ceph quorum_status
   {"election_epoch":8,"quorum":[0,1,2],"quorum_names":["node2","node3","node1"],"quorum_leader_name":"node2","monmap":{"epoch":1,"fsid":"4c5daa7a-0078-4983-9606-23ebe9a6995e","modified":"2019-05-30 14:03:20.889751","created":"2019-05-30 14:03:20.889751","features":{"persistent":["kraken","luminous"],"optional":[]},"mons":[{"rank":0,"name":"node2","addr":"192.168.121.41:6789/0","public_addr":"192.168.121.41:6789/0"},{"rank":1,"name":"node3","addr":"192.168.121.57:6789/0","public_addr":"192.168.121.57:6789/0"},{"rank":2,"name":"node1","addr":"192.168.121.208:6789/0","public_addr":"192.168.121.208:6789/0"}]}}
   
   # ceph quorum_status --format json-pretty

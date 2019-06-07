@@ -331,7 +331,7 @@
   [mdss]
   node4
   
-[clients]
+  [clients]
   client
   ```
   

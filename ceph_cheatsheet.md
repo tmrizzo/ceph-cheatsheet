@@ -328,10 +328,13 @@
   [rgws]
   node4
   
-  [clients]
+  [mdss]
+  node4
+  
+[clients]
   client
   ```
-
+  
 - Ansible: connection test
   
   ```yaml
@@ -440,7 +443,7 @@
   [cephuser@client group_vars]$ cp rgws.yml.sample rgws.yml
   [cephuser@client group_vars]$ cat rgws.yml
   ---
-dummy:
+  dummy:
   copy_admin_key: true
   ```
   
